@@ -2,6 +2,9 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import coding from "../../img/coding.png"
+import linkedin from "../../img/linkedin.png"
+import github from "../../img/GitHub-logo.png"
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
@@ -41,31 +44,33 @@ const Contact = () => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              +1 1234 556 75
+              8570906112
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              contact@lama.dev
+              akdon9811@gmail.com
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
+              Haryana, India
+            </div>
+            <div className="c-info-item">
+              <a href="https://www.linkedin.com/in/akash-gupta-bbb73b1b4/">
+                <i class="fonticon fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/akdon1198">
+                <i class="fonticon fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+            <img src={coding}></img>
+            <p>I am a <b>Web Developer, Programmer</b> and have enough knowledge to make any type of projects related to Websites
+              Get in touch. Always available for <b>freelancing</b> if the project is related to my knowledge.
+            </p>
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
-            <button>Submit</button>
-            {done && "Thank you..."}
-          </form>
         </div>
       </div>
     </div>

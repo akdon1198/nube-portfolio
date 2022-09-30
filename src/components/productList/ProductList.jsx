@@ -1,21 +1,19 @@
 import "./productList.css";
 import Product from "../product/Product";
 import { products } from "../../data";
-
+import Ecommerce from "../../img/Netflix.png"
 const ProductList = () => {
   return (
     <div className="pl">
       <div className="pl-texts">
-        <h1 className="pl-title">Create & inspire. It's Lama</h1>
+        <h1 className="pl-title">Create & inspire. It's Akash</h1>
         <p className="pl-desc">
-          Lama is a creative portfolio that your work has been waiting for.
-          Beautiful homes, stunning portfolio styles & a whole lot more awaits
-          inside.
+          These are some Projects related to my skills
         </p>
       </div>
       <div className="pl-list">
         {products.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link} />
+          <Product key={item.id} img={Ecommerce} link={item.link} />
         ))}
       </div>
     </div>

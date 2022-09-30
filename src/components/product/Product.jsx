@@ -1,5 +1,5 @@
 import "./product.css";
-
+import adress from "../../img/address.png"
 const Product = ({img,link}) => {
   return (
     <div className="p">

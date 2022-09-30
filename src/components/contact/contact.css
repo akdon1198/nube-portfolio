@@ -1,8 +1,28 @@
 .c {
-  height: 100vh;
+  height: 92vh;
   position: relative;
 }
-
+p{
+  font-size: large;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.fonticon{
+  color: black;
+  object-fit: cover;
+  padding: 0px 10px;
+  font-size: 33px;
+}
+.fa-github:hover{
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+.fa-linkedin-in:hover{
+  background-color: blue;
+  color: white;
+  border-radius: 30px;
+}
 .c-bg {
   width: 20px;
   height: 100%;
@@ -80,7 +100,7 @@ button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1150px) {
   .c-wrapper {
     flex-direction: column;
     padding: 0px 50px;
@@ -93,10 +113,6 @@ button {
   .c-info-item {
     margin: 20px 0px;
     width: 100%;
-  }
-
-  .c-desc {
-    display: none;
   }
 
   form {
